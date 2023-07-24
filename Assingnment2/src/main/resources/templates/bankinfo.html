@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<body>
+<ul>
+	<h2><li th:each="name: ${name}"><span th:text="${name}"></span></li></h2>
+</ul>
+<table style="border: solid 1px black;">
+	<thead>
+		<tr>
+			<th>Branches in Bangalore</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="address: ${address}">
+			<td th:text="${address}" />
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
